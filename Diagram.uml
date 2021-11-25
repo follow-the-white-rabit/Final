@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="417.51960784313724" y="0.0">Reserve</node>
+    <node x="549.1499999999999" y="763.0">Action</node>
+    <node x="214.5" y="871.0">Chef</node>
+    <node x="209.5" y="763.0">Meal</node>
+    <node x="0.0" y="108.0">Time</node>
+    <node x="0.0" y="1149.0">MenuTemplate</node>
+    <node x="876.0196078431372" y="130.0">Cash</node>
+    <node x="0.0" y="1317.0">groovyjarjarasm</node>
+    <node x="668.5" y="880.5">GetOrders</node>
+    <node x="227.0" y="1159.951171875">groovyjarjarpicocli</node>
+    <node x="7.936274509803923" y="0.0">Menu</node>
+    <node x="562.5196078431372" y="108.0">Client</node>
+    <node x="0.0" y="1025.0">MiddleChef</node>
+    <node x="749.0196078431372" y="130.0">QR</node>
+    <node x="85.5996732026144" y="617.0">Breakfast</node>
+    <node x="640.0" y="1317.0">org</node>
+    <node x="82.75" y="309.0">Supper</node>
+    <node x="294.76960784313724" y="262.0">Service</node>
+    <node x="1131.5" y="880.5">ProvideCheque</node>
+    <node x="812.5196078431372" y="0.0">Method</node>
+    <node x="981.5" y="880.5">MeetClients</node>
+    <node x="357.5" y="882.5">JuniorChef</node>
+    <node x="66.08333333333333" y="464.0">Lunch</node>
+    <node x="247.0" y="1317.0">META-INF</node>
+    <node x="789.0196078431372" y="283.0">Payment</node>
+    <node x="454.0" y="1317.0">groovy</node>
+    <node x="168.0" y="1025.0">SeniorChef</node>
+    <node x="715.0" y="1149.0">groovyjarjarcommonscli</node>
+    <node x="525.5" y="869.0">Waiter</node>
+    <node x="1045.0" y="1149.0">groovyjarjarantlr</node>
+    <node x="491.0" y="1149.0">Main</node>
+    <node x="814.4999999999999" y="880.5">ClearTheTable</node>
+    <node x="348.51960784313724" y="109.0">Reserved</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ClearTheTable" target="Action" relationship="REALIZATION">
+      <point x="0.0" y="-39.5" />
+      <point x="888.0" y="849.0" />
+      <point x="967.25" y="849.0" />
+      <point x="967.25" y="839.0" />
+      <point x="654.1499999999999" y="839.0" />
+      <point x="42.0" y="28.0" />
+    </edge>
+    <edge source="ProvideCheque" target="Action" relationship="REALIZATION">
+      <point x="0.0" y="-39.5" />
+      <point x="1207.5" y="849.0" />
+      <point x="967.25" y="849.0" />
+      <point x="967.25" y="839.0" />
+      <point x="654.1499999999999" y="839.0" />
+      <point x="42.0" y="28.0" />
+    </edge>
+    <edge source="Reserved" target="Reserve" relationship="DEPENDENCY">
+      <point x="0.0" y="-50.0" />
+      <point x="445.51960784313724" y="87.0" />
+      <point x="391.76960784313724" y="87.0" />
+      <point x="391.76960784313724" y="77.0" />
+      <point x="450.26960784313724" y="77.0" />
+      <point x="-32.75" y="28.0" />
+    </edge>
+    <edge source="groovyjarjarcommonscli" target="groovyjarjarcommonscli" relationship="DEPENDENCY">
+      <point x="63.75" y="15.5" />
+      <point x="906.25" y="1210.0" />
+      <point x="685.0" y="1210.0" />
+      <point x="685.0" y="1156.75" />
+      <point x="-127.5" y="-7.75" />
+    </edge>
+    <edge source="Time" target="Menu" relationship="TO_ONE">
+      <point x="33.5" y="-73.5" />
+      <point x="100.5" y="87.0" />
+      <point x="76.43627450980392" y="87.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="Waiter" target="Action" relationship="DEPENDENCY">
+      <point x="30.75" y="-51.0" />
+      <point x="617.75" y="849.0" />
+      <point x="612.1499999999999" y="849.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="MiddleChef" target="Chef" relationship="GENERALIZATION">
+      <point x="37.0" y="-39.5" />
+      <point x="111.0" y="1004.0" />
+      <point x="276.0" y="1004.0" />
+      <point x="0.0" y="51.0" />
+    </edge>
+    <edge source="MiddleChef" target="Meal" relationship="DEPENDENCY">
+      <point x="-37.0" y="-39.5" />
+      <point x="37.0" y="1004.0" />
+      <point x="65.95454545454547" y="1004.0" />
+      <point x="65.95454545454547" y="850.0" />
+      <point x="70.95454545454547" y="850.0" />
+      <point x="70.95454545454547" y="840.0" />
+      <point x="230.0" y="840.0" />
+      <point x="-41.0" y="28.0" />
+    </edge>
+    <edge source="Service" target="Reserve" relationship="DEPENDENCY">
+      <point x="-48.5" y="-106.0" />
+      <point x="343.26960784313724" y="236.0" />
+      <point x="338.01960784313724" y="236.0" />
+      <point x="338.01960784313724" y="87.0" />
+      <point x="391.76960784313724" y="87.0" />
+      <point x="391.76960784313724" y="77.0" />
+      <point x="450.26960784313724" y="77.0" />
+      <point x="-32.75" y="28.0" />
+    </edge>
+    <edge source="GetOrders" target="Action" relationship="REALIZATION">
+      <point x="0.0" y="-39.5" />
+      <point x="731.5" y="849.0" />
+      <point x="967.25" y="849.0" />
+      <point x="967.25" y="839.0" />
+      <point x="654.1499999999999" y="839.0" />
+      <point x="42.0" y="28.0" />
+    </edge>
+    <edge source="Lunch" target="Supper" relationship="CREATE">
+      <point x="0.0" y="-50.5" />
+      <point x="134.58333333333331" y="442.0" />
+      <point x="151.25" y="442.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="Menu" target="Time" relationship="DEPENDENCY">
+      <point x="-45.66666666666666" y="28.0" />
+      <point x="30.769607843137265" y="87.0" />
+      <point x="33.5" y="87.0" />
+      <point x="-33.5" y="-73.5" />
+    </edge>
+    <edge source="Time" target="Menu" relationship="DEPENDENCY">
+      <point x="-33.5" y="-73.5" />
+      <point x="33.5" y="87.0" />
+      <point x="30.769607843137265" y="87.0" />
+      <point x="-45.66666666666666" y="28.0" />
+    </edge>
+    <edge source="groovyjarjarantlr" target="groovyjarjarantlr" relationship="DEPENDENCY">
+      <point x="51.25" y="15.5" />
+      <point x="1198.75" y="1210.0" />
+      <point x="1015.0" y="1210.0" />
+      <point x="1015.0" y="1156.75" />
+      <point x="-102.5" y="-7.75" />
+    </edge>
+    <edge source="groovyjarjarcommonscli" target="groovyjarjarcommonscli" relationship="TO_ONE">
+      <point x="-63.75" y="15.5" />
+      <point x="778.75" y="1200.0" />
+      <point x="695.0" y="1200.0" />
+      <point x="695.0" y="1172.25" />
+      <point x="-127.5" y="7.75" />
+    </edge>
+    <edge source="groovyjarjarpicocli" target="groovyjarjarpicocli" relationship="TO_ONE">
+      <point x="54.75" y="15.5" />
+      <point x="391.25" y="1220.951171875" />
+      <point x="197.0" y="1220.951171875" />
+      <point x="197.0" y="1167.701171875" />
+      <point x="-109.5" y="-7.75" />
+    </edge>
+    <edge source="Breakfast" target="Menu" relationship="REALIZATION">
+      <point x="45.66666666666666" y="-50.5" />
+      <point x="199.76633986928107" y="596.0" />
+      <point x="249.76960784313724" y="596.0" />
+      <point x="249.76960784313724" y="87.0" />
+      <point x="218.3790849673203" y="87.0" />
+      <point x="218.3790849673203" y="77.0" />
+      <point x="122.10294117647055" y="77.0" />
+      <point x="45.66666666666663" y="28.0" />
+    </edge>
+    <edge source="JuniorChef" target="Meal" relationship="REALIZATION">
+      <point x="0.0" y="-39.5" />
+      <point x="419.0" y="850.0" />
+      <point x="339.0795454545455" y="850.0" />
+      <point x="339.0795454545455" y="840.0" />
+      <point x="312.0" y="840.0" />
+      <point x="41.0" y="28.0" />
+    </edge>
+    <edge source="groovyjarjarantlr" target="groovyjarjarantlr" relationship="TO_ONE">
+      <point x="-51.25" y="15.5" />
+      <point x="1096.25" y="1200.0" />
+      <point x="1025.0" y="1200.0" />
+      <point x="1025.0" y="1172.25" />
+      <point x="-102.5" y="7.75" />
+    </edge>
+    <edge source="groovyjarjarpicocli" target="groovyjarjarpicocli" relationship="DEPENDENCY">
+      <point x="-54.75" y="15.5" />
+      <point x="281.75" y="1210.951171875" />
+      <point x="207.0" y="1210.951171875" />
+      <point x="207.0" y="1183.201171875" />
+      <point x="-109.5" y="7.75" />
+    </edge>
+    <edge source="Lunch" target="Time" relationship="DEPENDENCY">
+      <point x="-45.66666666666666" y="-50.5" />
+      <point x="88.91666666666667" y="442.0" />
+      <point x="70.09967320261438" y="442.0" />
+      <point x="70.09967320261438" y="282.0" />
+      <point x="67.0" y="282.0" />
+      <point x="0.0" y="73.5" />
+    </edge>
+    <edge source="SeniorChef" target="Chef" relationship="GENERALIZATION">
+      <point x="36.0" y="-39.5" />
+      <point x="0.0" y="51.0" />
+    </edge>
+    <edge source="SeniorChef" target="Meal" relationship="DEPENDENCY">
+      <point x="-36.0" y="-39.5" />
+      <point x="204.0" y="994.0" />
+      <point x="152.5" y="994.0" />
+      <point x="152.5" y="850.0" />
+      <point x="70.95454545454547" y="850.0" />
+      <point x="70.95454545454547" y="840.0" />
+      <point x="230.0" y="840.0" />
+      <point x="-41.0" y="28.0" />
+    </edge>
+    <edge source="Lunch" target="Menu" relationship="REALIZATION">
+      <point x="45.666666666666686" y="-50.5" />
+      <point x="180.25" y="432.0" />
+      <point x="230.25" y="432.0" />
+      <point x="230.25" y="87.0" />
+      <point x="218.3790849673203" y="87.0" />
+      <point x="218.3790849673203" y="77.0" />
+      <point x="122.10294117647055" y="77.0" />
+      <point x="45.66666666666663" y="28.0" />
+    </edge>
+    <edge source="Breakfast" target="Time" relationship="DEPENDENCY">
+      <point x="-45.66666666666666" y="-50.5" />
+      <point x="108.43300653594774" y="596.0" />
+      <point x="38.46241830065361" y="596.0" />
+      <point x="38.46241830065361" y="282.0" />
+      <point x="67.0" y="282.0" />
+      <point x="0.0" y="73.5" />
+    </edge>
+    <edge source="Chef" target="Meal" relationship="TO_ONE">
+      <point x="-30.75" y="-51.0" />
+      <point x="245.25" y="850.0" />
+      <point x="271.0" y="850.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="Payment" target="Method" relationship="DEPENDENCY">
+      <point x="-38.5" y="-73.0" />
+      <point x="827.5196078431372" y="262.0" />
+      <point x="770.5196078431372" y="262.0" />
+      <point x="770.5196078431372" y="252.0" />
+      <point x="738.5196078431372" y="252.0" />
+      <point x="738.5196078431372" y="99.0" />
+      <point x="830.3529411764706" y="99.0" />
+      <point x="-35.66666666666663" y="39.0" />
+    </edge>
+    <edge source="Chef" target="Meal" relationship="REALIZATION">
+      <point x="30.75" y="-51.0" />
+      <point x="306.75" y="850.0" />
+      <point x="339.0795454545455" y="850.0" />
+      <point x="339.0795454545455" y="840.0" />
+      <point x="312.0" y="840.0" />
+      <point x="41.0" y="28.0" />
+    </edge>
+    <edge source="QR" target="Method" relationship="REALIZATION">
+      <point x="0.0" y="-50.5" />
+      <point x="802.5196078431372" y="109.0" />
+      <point x="866.0196078431372" y="109.0" />
+      <point x="0.0" y="39.0" />
+    </edge>
+    <edge source="Supper" target="Time" relationship="DEPENDENCY">
+      <point x="-34.25" y="-50.5" />
+      <point x="117.0" y="282.0" />
+      <point x="67.0" y="282.0" />
+      <point x="0.0" y="73.5" />
+    </edge>
+    <edge source="Service" target="Reserved" relationship="REALIZATION">
+      <point x="48.5" y="-106.0" />
+      <point x="440.26960784313724" y="236.0" />
+      <point x="445.51960784313724" y="236.0" />
+      <point x="0.0" y="50.0" />
+    </edge>
+    <edge source="Payment" target="Method" relationship="TO_ONE">
+      <point x="38.5" y="-73.0" />
+      <point x="904.5196078431372" y="262.0" />
+      <point x="993.5196078431372" y="262.0" />
+      <point x="993.5196078431372" y="99.0" />
+      <point x="901.6862745098039" y="99.0" />
+      <point x="35.66666666666663" y="39.0" />
+    </edge>
+    <edge source="Waiter" target="Action" relationship="TO_ONE">
+      <point x="-30.75" y="-51.0" />
+      <point x="556.25" y="849.0" />
+      <point x="570.1499999999999" y="849.0" />
+      <point x="-42.0" y="28.0" />
+    </edge>
+    <edge source="Breakfast" target="Lunch" relationship="CREATE">
+      <point x="0.0" y="-50.5" />
+      <point x="154.09967320261438" y="586.0" />
+      <point x="134.58333333333331" y="586.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="Client" target="Reserve" relationship="REALIZATION">
+      <point x="0.0" y="-51.0" />
+      <point x="628.0196078431372" y="87.0" />
+      <point x="515.7696078431372" y="87.0" />
+      <point x="32.75" y="28.0" />
+    </edge>
+    <edge source="Supper" target="Menu" relationship="REALIZATION">
+      <point x="34.25" y="-50.5" />
+      <point x="185.5" y="282.0" />
+      <point x="155.7540849673203" y="282.0" />
+      <point x="155.7540849673203" y="87.0" />
+      <point x="218.3790849673203" y="87.0" />
+      <point x="218.3790849673203" y="77.0" />
+      <point x="122.10294117647055" y="77.0" />
+      <point x="45.66666666666663" y="28.0" />
+    </edge>
+    <edge source="MeetClients" target="Action" relationship="REALIZATION">
+      <point x="0.0" y="-39.5" />
+      <point x="1046.5" y="849.0" />
+      <point x="967.25" y="849.0" />
+      <point x="967.25" y="839.0" />
+      <point x="654.1499999999999" y="839.0" />
+      <point x="42.0" y="28.0" />
+    </edge>
+    <edge source="Cash" target="Method" relationship="REALIZATION">
+      <point x="0.0" y="-50.5" />
+      <point x="929.5196078431372" y="109.0" />
+      <point x="866.0196078431372" y="109.0" />
+      <point x="0.0" y="39.0" />
+    </edge>
+    <edge source="Supper" target="Breakfast" relationship="CREATE">
+      <point x="0.0" y="50.5" />
+      <point x="151.25" y="442.0" />
+      <point x="238.76960784313724" y="442.0" />
+      <point x="238.76960784313724" y="586.0" />
+      <point x="154.09967320261438" y="586.0" />
+      <point x="0.0" y="-50.5" />
+    </edge>
+    <edge source="Payment" target="QR" relationship="DEPENDENCY">
+      <point x="-38.5" y="-73.0" />
+      <point x="827.5196078431372" y="262.0" />
+      <point x="770.5196078431372" y="262.0" />
+      <point x="770.5196078431372" y="252.0" />
+      <point x="802.5196078431372" y="252.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.6754385964912281" showDependencies="true" x="789.3116883116884" y="674.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
